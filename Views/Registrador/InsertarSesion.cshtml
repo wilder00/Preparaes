@@ -1,0 +1,31 @@
+@model Sesiones
+
+
+<h1>Insertar Sesion</h1>
+@Html.ValidationSummary()
+
+<form asp-action="InsertarSesion" method="post">
+
+<div class="form-group">
+    <label>Tema:</label>
+    <input type="text" class="form-control" asp-for="Tema" />
+</div>
+<div class="form-group">
+    <label>Numero de Sesion:</label>
+    <input type="number" class="form-control" asp-for="NumSesion" />
+</div>
+
+<div class="form-group">
+    <label>Objetivos:</label>
+    <input type="text" class="form-control" asp-for="Objetivos" />
+</div>
+
+<div class="form-group">
+    <label>Cursos:</label>
+    <select class="form-control" asp-for="CursoId" asp-items="ViewBag.Cursos"></select>
+           
+</div>
+
+<button type="submit">Registrar</button>
+
+</form>

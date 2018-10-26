@@ -1,0 +1,40 @@
+@model Preguntas
+
+<h2>Insertar Pregunta</h2>
+@Html.ValidationSummary()
+<form asp-action="InsertarPregunta" method="post">
+
+<div class="form-group">
+    <label>Pregunta:</label>
+    <input type="text" class="form-control" asp-for="Pregunta" />
+</div>
+<div class="form-group">
+    <label>Respuesta Correcta:</label>
+    <input type="text" class="form-control" asp-for="RptaCorrecta" />
+</div>
+
+<div class="form-group">
+    <label>Respuestas incorrecta 1:</label>
+    <input type="text" class="form-control" asp-for="RptaIncorrecta1" />
+</div>
+
+<div class="form-group">
+    <label>Respuestas incorrecta 2:</label>
+    <input type="text" class="form-control" asp-for="RptaIncorrecta2" />
+</div>
+
+<div class="form-group">
+    <label>Tipo:</label>
+    <input type="text" class="form-control" asp-for="Tipo" />
+    <small class="">es para agrupar por tipo de Pregunta</small>
+</div>
+
+<div class="form-group">
+    <label>Sesion:</label>
+    <select class="form-control" asp-for="SesionId" asp-items="ViewBag.Sesiones"></select>
+           
+</div>
+
+<button type="submit">Registrar</button>
+
+</form>

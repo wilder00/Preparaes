@@ -1,0 +1,37 @@
+@model Usuarios
+
+
+<h2>registrarse</h2>
+
+@Html.ValidationSummary()
+
+<form asp-action="Registrarse" method="post">
+
+<div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" class="form-control" asp-for="Nombre" />
+</div>
+<div class="form-group">
+    <label>Apellido paterno:</label>
+    <input type="text" class="form-control" asp-for="ApellidoP" />
+</div>
+
+
+<div class="form-group">
+    <label>Apellido Materno:</label>
+    <input type="text" class="form-control" asp-for="ApellidoM" />
+</div>
+
+<div class="form-group">
+    <label>Correo:</label>
+    <input type="email" class="form-control" asp-for="Correo" />
+</div>
+
+<div class="form-group">
+    <label>Contraseña para registrarse:</label>
+    <input type="password" class="form-control" asp-for="password" />
+</div>
+
+<button type="submit">Registrar</button>
+
+</form>
