@@ -21,7 +21,7 @@ namespace PREPARAES.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registrarse(Usuarios u){
+        public IActionResult Registrarse(Usuario u){
 
             if(ModelState.IsValid){
                 _context.Usuarios.Add(u);
@@ -45,28 +45,6 @@ namespace PREPARAES.Controllers
         }
 
 
-        //Insertar pregunta----------
-
-
-        public IActionResult InsertarPregunta(){
-            ViewBag.Sesiones = new SelectList(_context.Sesiones,"Id","Tema");
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult InsertarPregunta(Preguntas p){
-
-            if(ModelState.IsValid){
-                _context.Preguntas.Add(p);
-                _context.SaveChanges();
-                return RedirectToAction("Confirmado");
-            }
-
-            ViewBag.Sesiones = new SelectList(_context.Sesiones,"Id","Tema");
-            return View(p);
-        }
-
-
         //Insertar Curso
         public IActionResult InsertarCurso(){
             ViewBag.UsuarioId= 1;
@@ -74,7 +52,7 @@ namespace PREPARAES.Controllers
         }
 
         [HttpPost]
-        public IActionResult InsertarCurso(Cursos c){
+        public IActionResult InsertarCurso(Curso c){
             if(ModelState.IsValid){
                 _context.Cursos.Add(c);
                 _context.SaveChanges();
@@ -91,7 +69,7 @@ namespace PREPARAES.Controllers
 
 
         [HttpPost]
-        public IActionResult InsertarSesion(Sesiones s){
+        public IActionResult InsertarSesion(Sesion s){
             if(ModelState.IsValid){
                 _context.Sesiones.Add(s);
                 _context.SaveChanges();
@@ -100,6 +78,31 @@ namespace PREPARAES.Controllers
             ViewBag.Cursos = new SelectList(_context.Cursos,"Id","Nombre");
             return View(s);
         }
+
+        
+
+        //Insertar pregunta----------
+
+
+        public IActionResult InsertarPregunta(){
+            ViewBag.Sesiones = new SelectList(_context.Sesiones,"Id","Tema");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult InsertarPregunta(Pregunta p){
+
+            if(ModelState.IsValid){
+                _context.Preguntas.Add(p);
+                _context.SaveChanges();
+                return RedirectToAction("Confirmado");
+            }
+
+            ViewBag.Sesiones = new SelectList(_context.Sesiones,"Id","Tema");
+            return View(p);
+        }
+
+
 
 
     }

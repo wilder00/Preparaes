@@ -10,10 +10,10 @@ namespace PREPARAES.Models
         }
 
 
-        public DbSet<Preguntas> Preguntas { get; set; }
-        public DbSet<Sesiones> Sesiones { get; set; }
-        public DbSet<Cursos> Cursos { get; set; }
-        public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Pregunta> Preguntas { get; set; }
+        public DbSet<Sesion> Sesiones { get; set; }
+        public DbSet<Curso> Cursos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
         
         
     }

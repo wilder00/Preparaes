@@ -65,3 +65,41 @@ E:\pag\PREGUNTAS\PREPARAES\bin\Debug\netcoreapp2.1\PREPARAES.Views.dll
 E:\pag\PREGUNTAS\PREPARAES\bin\Debug\netcoreapp2.1\PREPARAES.Views.pdb
 E:\pag\PREGUNTAS\PREPARAES\obj\Debug\netcoreapp2.1\PREPARAES.Views.pdb
 E:\pag\PREGUNTAS\PREPARAES\obj\Debug\netcoreapp2.1\PREPARAES.csproj.CopyComplete
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.deps.json
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.runtimeconfig.json
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.runtimeconfig.dev.json
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.dll
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.pdb
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.Views.dll
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\bin\Debug\netcoreapp2.1\PREPARAES.Views.pdb
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.csprojAssemblyReference.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.csproj.CoreCompileInputs.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.RazorAssemblyInfo.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.RazorAssemblyInfo.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.AssemblyInfoInputs.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.AssemblyInfo.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.TagHelpers.input.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.TagHelpers.output.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.RazorCoreGenerate.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\Confirmado.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\IniciarSesion.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\InsertarCurso.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\InsertarPregunta.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\InsertarSesion.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Registrador\Registrarse.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.RazorTargetAssemblyInfo.cache
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.RazorTargetAssemblyInfo.cs
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.Views.pdb
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.dll
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.pdb
+d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.csproj.CopyComplete
