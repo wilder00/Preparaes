@@ -5,7 +5,7 @@ namespace PREPARAES.Models
     public class Pregunta
     {
         public int Id { get; set; }
-        [Required]
+        
         public string PreguntaString { get; set; }
         [Required]
         public string RptaCorrecta { get; set; }

@@ -103,3 +103,5 @@ d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netc
 d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.dll
 d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.pdb
 d:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\PREPARAES.csproj.CopyComplete
+D:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\PreguntaRespuesta\ResponderPregunta.g.cshtml.cs
+D:\PROYECTOS\proyectos de visual studio\con visual code\Preparaes\obj\Debug\netcoreapp2.1\Razor\Views\PreguntaRespuesta\SeleccionarTema.g.cshtml.cs

@@ -1,0 +1,41 @@
+@using Preparaes.modelosDeUso;
+
+@model Pregunta
+@{
+    var listaPregunta = (PreguntaParaModelo)ViewBag.pregunta;
+    var listaPre = listaPregunta.listaPregunta;
+}
+<h1>Responder Pregunta</h1>
+
+@Html.ValidationSummary()
+
+<br/>
+    @if(ViewBag.confirRpta != null){
+        @ViewBag.confirRpta;
+    }
+<br/>
+<br/>
+@using (Html.BeginForm("ResponderPregunta","PreguntaRespuesta"))
+{   
+    <div style="font-size: 40px">  @listaPregunta.pregunt.PreguntaString </div> <br/>
+    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[0],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[0],new{@class = "form-check-label display-2",@style ="font-size: 20px"})   <br/>
+    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[1],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[1],new{@class = "form-check-label display-2",@style ="font-size: 20px"})     <br/>
+    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[2],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[2],new{@class = "form-check-label display-2",@style ="font-size: 20px"})  <br/>
+  
+    <br/>
+    <br/>
+
+
+    <div class="row">
+      <div class="col-md-3"> <button type="submit" class="btn btn-primary" value="Responder" >Responder</button></div>
+
+    </div>
+    
+
+}   
+<br/>
+@using (Html.BeginForm("SeleccionarTema","PreguntaRespuesta")){
+    <div class="row">
+     <div class="col-md-3"><button type="submit" class="btn btn-dark">Otra Pregunta</button></div>
+    </div>
+}

@@ -36,7 +36,21 @@ namespace PREPARAES
             // dotnet add package Pomelo.EntityFrameworkCore.MySql
             services.AddDbContext<PreparaesContext>(options => options.UseMySql(Configuration.GetConnectionString("Default")));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                                .AddSessionStateTempDataProvider();
+
+
+
+
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".AdventureWorks.Session";
+            // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(10000);
+                options.Cookie.HttpOnly = true;
+            });
             
         }
 
@@ -56,6 +70,7 @@ namespace PREPARAES
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

@@ -2,7 +2,10 @@
 
 <h2>Insertar Pregunta</h2>
 @Html.ValidationSummary()
-<form asp-action="InsertarPregunta" method="post">
+
+@using (Html.BeginForm())
+{
+    
 
 <div class="form-group">
     <label>Pregunta:</label>
@@ -10,17 +13,17 @@
 </div>
 <div class="form-group">
     <label>Respuesta Correcta:</label>
-    <input type="text" class="form-control" asp-for="RptaCorrecta" />
+    @Html.TextAreaFor(m => m.RptaCorrecta,4,4, new{@class = "form-control"})
 </div>
 
 <div class="form-group">
     <label>Respuestas incorrecta 1:</label>
-    <input type="text" class="form-control" asp-for="RptaIncorrecta1" />
+    @Html.TextAreaFor(m => m.RptaIncorrecta1,4,4, new{@class = "form-control"})
 </div>
 
 <div class="form-group">
     <label>Respuestas incorrecta 2:</label>
-    <input type="text" class="form-control" asp-for="RptaIncorrecta2" />
+    @Html.TextAreaFor(m => m.RptaIncorrecta2,4,4, new{@class = "form-control"})
 </div>
 
 <div class="form-group">
@@ -37,4 +40,4 @@
 
 <button type="submit">Registrar</button>
 
-</form>
+}

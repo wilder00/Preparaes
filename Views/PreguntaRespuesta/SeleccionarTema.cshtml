@@ -1,0 +1,32 @@
+
+@using PREPARAES.Models
+@model Sesion
+
+<h1>Seleccionar tema</h1>
+@Html.ValidationSummary()
+
+
+
+
+@**using (Html.BeginForm("SeleccionarTema", "PreguntaRespuesta", FormMethod.Get))**@
+<div class="container">
+    @{
+        if(ViewBag.numero != null){
+            <h1>El numero es @ViewBag.numero </h1>
+        }
+    }
+@using (Html.BeginForm()){
+    @** @Html.DropDownList("Id", 
+                    ViewBag.temas as SelectList, 
+                    "Selecciona Tema",
+                    new { @class = "form-control" })**@
+
+    @Html.DropDownListFor(m => m.Id, 
+                    ViewBag.temas as SelectList, 
+                    null ,
+                    new{@class = "form-control"})
+    <br/>
+    <input class="form-control" value="enviar" type="submit" />
+}   
+</div>
+
