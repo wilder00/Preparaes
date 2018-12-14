@@ -7,32 +7,89 @@
 }
 <h1>Responder Pregunta</h1>
 
-@Html.ValidationSummary()
+
 
 <br/>
     @if(ViewBag.confirRpta != null){
-        @ViewBag.confirRpta;
+        if(ViewBag.confirRpta.Equals("La Respuesta es correcta")){
+            <div class="alert alert-success" role="alert">
+                @ViewBag.confirRpta
+            </div>
+        }else{
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.confirRpta
+            </div>
+        }
+        
     }
+
 <br/>
-<br/>
-@using (Html.BeginForm("ResponderPregunta","PreguntaRespuesta"))
-{   
-    <div style="font-size: 40px">  @listaPregunta.pregunt.PreguntaString </div> <br/>
-    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[0],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[0],new{@class = "form-check-label display-2",@style ="font-size: 20px"})   <br/>
-    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[1],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[1],new{@class = "form-check-label display-2",@style ="font-size: 20px"})     <br/>
-    @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[2],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[2],new{@class = "form-check-label display-2",@style ="font-size: 20px"})  <br/>
-  
-    <br/>
-    <br/>
+
+@if(ViewBag.modo == "seleccionar"){
 
 
-    <div class="row">
-      <div class="col-md-3"> <button type="submit" class="btn btn-primary" value="Responder" >Responder</button></div>
 
-    </div>
+    @using (Html.BeginForm("ResponderPregunta","PreguntaRespuesta"))
+
+    {   @Html.ValidationSummary()
+        <div style="font-size: 40px">  @listaPregunta.pregunt.PreguntaString </div> <br/>
+        @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[0],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[0],new{@class = "form-check-label display-2",@style ="font-size: 20px"})   <br/>
+        @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[1],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[1],new{@class = "form-check-label display-2",@style ="font-size: 20px"})     <br/>
+        @Html.RadioButtonFor(m => m.RptaCorrecta,listaPre[2],htmlAttributes: new { @checked = "false" }) @Html.Label(null,listaPre[2],new{@class = "form-check-label display-2",@style ="font-size: 20px"})  <br/>
     
+        <br/>
+        <br/>
 
-}   
+
+        <div class="row">
+        <div class="col-md-3"> <button type="submit" class="btn btn-primary" value="Responder" >Responder</button></div>
+
+        </div>
+        
+
+    }   
+
+}else{
+
+
+    @using (Html.BeginForm("ResponderPregunta","PreguntaRespuesta"))
+    {   
+        <div style="font-size: 40px">  @listaPregunta.pregunt.PreguntaString </div> <br/>
+        @Html.TextAreaFor(m => m.RptaCorrecta, 5,5,new{@class = "form-control", @value = ""});
+        <br/>
+      
+
+        <div class="row">
+        <div class="col-md-3"> <button type="submit" class="btn btn-primary" value="Responder" >Responder</button></div>
+
+        </div>
+        
+
+    }   
+}
+
+
+<br/>
+
+
+    <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        VER RESPUESTA
+    </a>
+    
+    </p>
+    <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        
+        <div style="font-size: 20px; color: #333"> La Respuesta es: <strong> @listaPregunta.pregunt.RptaCorrecta </strong>  </div>
+    </div>
+    </div>
+
+
+
+<br/>
+
+
 <br/>
 @using (Html.BeginForm("SeleccionarTema","PreguntaRespuesta")){
     <div class="row">

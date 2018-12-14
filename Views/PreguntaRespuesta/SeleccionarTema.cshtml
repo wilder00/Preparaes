@@ -1,6 +1,6 @@
 
-@using PREPARAES.Models
-@model Sesion
+@using Preparaes.modelosDeUso
+@model IndicarTema
 
 <h1>Seleccionar tema</h1>
 @Html.ValidationSummary()
@@ -20,12 +20,19 @@
                     ViewBag.temas as SelectList, 
                     "Selecciona Tema",
                     new { @class = "form-control" })**@
-
+    <br/>
+    <label>Seleccionar el Tema:</label>
     @Html.DropDownListFor(m => m.Id, 
                     ViewBag.temas as SelectList, 
                     null ,
                     new{@class = "form-control"})
     <br/>
+    <label>Seleccionar el modo:</label>
+    @Html.DropDownListFor(m => m.Modo, 
+                    (SelectList)ViewBag.sel,null
+                    ,
+                    new{@class = "form-control"})
+    <br/><br/><br/><br/>
     <input class="form-control" value="enviar" type="submit" />
 }   
 </div>

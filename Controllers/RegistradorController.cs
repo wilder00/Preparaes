@@ -95,7 +95,7 @@ namespace PREPARAES.Controllers
             if(ModelState.IsValid){
                 _context.Preguntas.Add(p);
                 _context.SaveChanges();
-                return RedirectToAction("Confirmado");
+                return RedirectToAction("InsertarPregunta");
             }
 
             ViewBag.Sesiones = new SelectList(_context.Sesiones,"Id","Tema");

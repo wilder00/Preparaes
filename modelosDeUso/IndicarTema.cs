@@ -1,8 +1,10 @@
+using PREPARAES.Models;
+
 namespace Preparaes.modelosDeUso
 {
-    public class IndicarTema
+    public class IndicarTema : Sesion
     {
-        public int Id { get; set; }
+        public string Modo{ get; set; } //seleccionar o escribir
         
     }
 }

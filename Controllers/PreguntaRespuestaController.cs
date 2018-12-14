@@ -44,13 +44,33 @@ namespace Preparaes.Controllers
 
 
         public IActionResult SeleccionarTema(){
+            
             ViewBag.temas = new SelectList(_context.Sesiones,"Id","Tema");
+            var lis= new List<String>();
+            lis.Add("responder");
+            lis.Add("seleccionar");
+            var sel = new SelectList(lis);
+            ViewBag.sel = sel;
+
             return View();
 
         }
         
         [HttpPost]
-        public IActionResult SeleccionarTema(Sesion s){
+        public IActionResult SeleccionarTema(IndicarTema s){
+            
+            ViewBag.temas = new SelectList(_context.Sesiones,"Id","Tema");
+            var lis= new List<String>();
+            lis.Add("seleccionar");
+            lis.Add("responder");
+            var sel = new SelectList(lis);
+            ViewBag.sel = sel;
+
+            if(s.Modo != null){
+                HttpContext.Session.SetString("modo",s.Modo);
+            }
+            
+            ViewBag.modo = HttpContext.Session.GetString("modo");
             
             if(ModelState.IsValid){
                 
@@ -121,6 +141,7 @@ namespace Preparaes.Controllers
 
        [HttpPost]
         public IActionResult ResponderPregunta(Pregunta p){
+            ViewBag.modo = HttpContext.Session.GetString("modo");
 /*
             var listaDePreguntas = new List<String>();
             listaDePreguntas.Add(pregu.RptaCorrecta);
